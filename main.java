@@ -1,4 +1,6 @@
+import java.io.SerializablePermission;
 import java.util.Scanner; 
+import javax.swing.JOptionPane;
 
 // CREA UN PROGRAMA QUE PIDA LA EDAD Y EL SALARIO DE UNA PERSONA 
 // EL PROGRAMA DEBE PRESENTAR UN MENU EL CUAL CONTIENE: 
@@ -31,14 +33,17 @@ public class main {
         System.out.println("Ingrese una opción:");
         opcion =entrada.nextInt(); 
 
-        switch(opcion) {
+        switch (opcion) {
             case 1: 
-
+                salario = salario + 200;
+                break;
             case 2: 
 
             case 3: 
 
         }
+
+        JOptionPane.showMessageDialog(null, "El salario es: " + salario);
 
     }
 }
